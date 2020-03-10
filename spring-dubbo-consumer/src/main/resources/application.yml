@@ -1,0 +1,13 @@
+dubbo:
+  application:
+    name: service-consumer
+  registry:
+    address: 192.168.0.10 # zookeeper注册中心的地址
+    protocol: zookeeper
+    register: true
+    port: 2181
+    use-as-config-center: false #要想使端口生效，必须加这个，否则就要在address后面加端口
+
+server:
+  servlet:
+    context-path: /spring-dubbo-consumer
