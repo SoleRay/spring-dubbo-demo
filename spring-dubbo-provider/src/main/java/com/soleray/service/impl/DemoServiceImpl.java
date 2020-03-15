@@ -1,7 +1,7 @@
 package com.soleray.service.impl;
 
 import com.soleray.service.DemoService;
-import org.apache.dubbo.config.annotation.Service;
+import org.springframework.stereotype.Service;
 
 @Service
 public class DemoServiceImpl implements DemoService {
