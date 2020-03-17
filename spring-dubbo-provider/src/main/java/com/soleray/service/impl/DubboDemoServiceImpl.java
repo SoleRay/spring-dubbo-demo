@@ -8,6 +8,12 @@ public class DubboDemoServiceImpl implements DubboDemoService {
 
     @Override
     public String sayDubboHello(String name) {
-        return null;
+        System.out.println("*********************** " + name);
+        return "Hello " + name;
+    }
+
+    @Override
+    public void sayDubboGoodNight(String name) {
+
     }
 }

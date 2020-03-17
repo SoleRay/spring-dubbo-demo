@@ -1,10 +1,10 @@
 package com.soleray.service;
 
-public interface DemoService {
+public interface DubboDemoService {
 	/**
 	 * 示例方法
 	 * @param name
 	 * @return
 	 */
-	String sayHello(String name);
+	String sayDubboHello(String name);
 }
