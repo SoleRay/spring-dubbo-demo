@@ -21,9 +21,9 @@ public class DubboHystrixCommand extends HystrixCommand<Result> {
 
 	@Override
 	protected Result run() throws Exception {
-		logger.debug("通过了熔断器发起调用");
+		logger.info("通过了熔断器发起调用");
 		Result result = invoker.invoke(invocation);
-		logger.debug("调用成功，获得结果"+result);
+		logger.info("调用成功，获得结果"+result);
 		return result;
 	}
 
