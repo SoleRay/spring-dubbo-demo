@@ -1,0 +1,1 @@
+hystrix=com.soleray.hystrix.DubboHystrixFilter

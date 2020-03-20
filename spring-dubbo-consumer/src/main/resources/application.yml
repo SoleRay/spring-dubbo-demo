@@ -7,7 +7,6 @@ dubbo:
     register: true
     port: 2181
     use-as-config-center: false #要想使端口生效，必须加这个，否则就要在address后面加端口
-
 server:
   servlet:
     context-path: /spring-dubbo-consumer

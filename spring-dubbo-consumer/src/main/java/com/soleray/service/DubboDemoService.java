@@ -1,5 +1,6 @@
 package com.soleray.service;
 
+
 public interface DubboDemoService {
 	/**
 	 * 示例方法

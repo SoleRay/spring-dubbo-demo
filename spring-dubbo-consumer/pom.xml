@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>11</java.version>
+        <hystrix.version>1.5.18</hystrix.version>
+
     </properties>
 
     <dependencies>
@@ -28,6 +30,16 @@
 <!--                    <artifactId>spring-boot-starter-logging</artifactId>-->
 <!--                </exclusion>-->
 <!--            </exclusions>-->
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-core</artifactId>
+            <version>${hystrix.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-metrics-event-stream</artifactId>
+            <version>${hystrix.version}</version>
         </dependency>
     </dependencies>
 

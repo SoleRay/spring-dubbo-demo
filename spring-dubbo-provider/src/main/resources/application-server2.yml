@@ -1,0 +1,18 @@
+server:
+  port: 8082
+dubbo:
+  application:
+    name: service-provider
+  registry:
+    address: 192.168.0.10,192.168.0.11,192.168.0.12 # zookeeper注册中心的地址
+    protocol: zookeeper
+    register: true
+    port: 2181
+    use-as-config-center: false #要想使端口生效，必须加这个，否则就要在address后面加端口
+  protocol:
+    name: dubbo
+    port: 20882
+    accesslog: true
+  provider:
+    retries: 1
+    delay: -1
